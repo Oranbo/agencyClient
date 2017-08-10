@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/top_layout"/>
+        <!--House Images Layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:orientation="horizontal">
+            <com.app.blackorange.agencyapp.views.HorizontalListView
+                android:id="@+id/h_img_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <!--House Content layout-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center_vertical|left"
+                android:text="地址:"
+                android:textSize="22sp"/>
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/h_content_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center_vertical|left"
+                android:textSize="22sp"
+                android:hint="地址"
+                android:inputType="text"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:shrinkColumns="0,1,2"
+            android:stretchColumns="0,1,2">
+            <!--分割线-->
+            <View
+                android:layout_height="10dip"
+                android:background="#ffaad5" />
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="楼层:"
+                    android:textSize="19sp" />
+
+                <!--<EditText-->
+                    <!--android:id="@+id/h_content_floor"-->
+                    <!--android:gravity="center_vertical|left"-->
+                    <!--android:paddingBottom="10dp"-->
+                    <!--android:paddingTop="10dp"-->
+                    <!--android:textSize="19sp" />-->
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/h_content_floor"
+                    android:gravity="center_vertical|left"
+                    android:padding="10dp"
+                    android:textSize="19sp"
+                    android:hint="楼层"
+                    android:inputType="number"
+                    android:textColor="#000000"/>
+
+                <TextView
+
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:padding="10dp"
+                    android:text="装修:"
+                    android:textSize="19sp" />
+
+                <!--<EditText-->
+                    <!--android:id="@+id/h_content_decoration"-->
+                    <!--android:gravity="center_vertical|left"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:padding="10dp"-->
+                    <!--android:textSize="19sp"/>-->
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/h_content_decoration"
+                    android:gravity="center_vertical|left"
+                    android:padding="10dp"
+                    android:textSize="19sp"
+                    android:hint="装修情况"
+                    android:inputType="text"
+                    android:textColor="#000000"/>
+
+            </TableRow>
+            <View
+                android:layout_height="10dip"
+                android:background="#ffaad5" />
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:gravity="center_vertical|left"
+                    android:padding="10dp"
+                    android:text="布局:"
+                    android:textSize="19sp"/>
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/h_content_layout"
+                    android:gravity="center_vertical|left"
+                    android:padding="10dp"
+                    android:textSize="19sp"
+                    android:hint="布局"
+                    android:inputType="text"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:gravity="center_vertical|left"
+                    android:padding="10dp"
+                    android:text="大小:"
+                    android:textSize="19sp"/>
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/h_content_size"
+                    android:gravity="center_vertical|left"
+                    android:padding="10dp"
+                    android:textSize="19sp"
+                    android:hint="大小"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000000"/>
+
+            </TableRow>
+            <!--分割线-->
+            <View
+                android:layout_height="10dip"
+                android:background="#ffaad5" />
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="center_vertical|left"
+                    android:padding="10dp"
+                    android:text="房东:"
+                    android:textSize="19sp" />
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/h_content_host"
+                    android:gravity="center_vertical|left"
+                    android:padding="10dp"
+                    android:textSize="19sp"
+                    android:hint="房东编号"
+                    android:inputType="number"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/h_contenttextView"
+                    android:gravity="center_vertical|left"
+                    android:padding="10dp"
+                    android:text="电话:"
+                    android:textSize="19sp" />
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/h_content_phone"
+                    android:gravity="center_vertical|left"
+                    android:padding="10dp"
+                    android:textSize="19sp"
+                    android:hint="电话"
+                    android:inputType="number"
+                    android:textColor="#000000"/>
+            </TableRow>
+            <!--分割线-->
+            <View
+                android:layout_height="10dip"
+                android:background="#ffaad5" />
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="center_vertical|left"
+                    android:padding="10dp"
+                    android:text="类型："
+                    android:textSize="19sp" />
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/h_content_type"
+                    android:gravity="center_vertical|left"
+                    android:padding="10dp"
+                    android:textSize="19sp"
+                    android:hint="类型"
+                    android:inputType="text"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/h_content_rrrr"
+                    android:gravity="center_vertical|left"
+                    android:padding="10dp"
+                    android:text="出租方式:"
+                    android:textSize="19sp" />
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/h_content_rtype"
+                    android:gravity="center_vertical|left"
+                    android:padding="10dp"
+                    android:textSize="19sp"
+                    android:hint="出租形式"
+                    android:inputType="text"
+                    android:textColor="#000000"/>
+            </TableRow>
+        </TableLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

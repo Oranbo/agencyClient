@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="100dp">
+    <item
+        android:id="@+id/ab_all_item"
+        android:orderInCategory="1"
+        android:title="全部"/>
+    <item
+        android:id="@+id/ab_emp_item"
+        android:orderInCategory="1"
+        android:title="员工"/>
+    <item
+        android:id="@+id/ab_guest_item"
+        android:orderInCategory="1"
+        android:title="客户"/>
+    <item
+        android:id="@+id/ab_add_item"
+        android:orderInCategory="1"
+        android:title="新增"/>
+
+</menu>
